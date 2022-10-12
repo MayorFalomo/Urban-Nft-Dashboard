@@ -1,0 +1,206 @@
+#rightGridContainer{
+    background-color: #E7EDF6;
+    z-index: 99999;
+}
+#dark #rightGridContainer{
+    background-color:  #001219;
+    color: #fff;
+}
+
+.Ebonycard{
+background-color: #fff;
+padding: 10px 10px;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+border-radius: 20px;
+margin: 30px auto;
+width: 95%;
+}
+
+#dark .Ebonycard{
+    background-color:   #001219;
+    color: #fff;
+    border: 1px black solid;
+}
+
+.notify{
+    position: relative;
+    background-color: #C2D8F9;
+    padding: 5px 10px;
+    border-radius: 40px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.notify p{
+    font-size: 35px;
+}
+.owner{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.owner .profileImg{
+    width: 50px;
+}
+.owner .profileImg img{
+    width: 100%;
+    border-radius: 50%;
+
+}
+.owner p{
+    display: flex;
+    align-items: center;
+}
+.headBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#dark .headBar{
+    background-color:  #001219;
+    border: 1px black solid;
+}
+
+.number{
+    position: absolute;
+    right: -7px;
+    top: -10px;
+    color: #fff;
+    background-color: red;
+    z-index: 99;
+    padding: 2px 5px;
+    border-radius: 30px;
+}
+.auction img{
+    width: 100%;
+}
+.bar{
+    width: 95%;
+    margin: auto;
+}
+.headBar p{
+    font-size: 25px;
+}
+.auction{
+    position: relative;
+        margin: 40px auto;
+}
+
+.auction .caption{
+    background-color: #01417D;
+    color: #fff;
+    position: absolute;
+    top: -20px;
+    right: 0;
+    -webkit-transform: translateX(-30%);
+    transform: translateX(-30%);
+    padding: 10px 10px;
+}
+.auction h4{
+    position: absolute;
+    bottom: 10px;
+    padding: 10px 25px;
+    border-top-right-radius: 20PX;
+    border-bottom-left-radius: 20px;
+    left: 4px;
+    color: #fff;
+    background-color: #8B6561;
+}
+.flexHighBtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+}
+
+.flexHighBtn h5{
+    color: #01417D;
+}
+
+.flexHighBtn button{
+    padding: 5px 20px;
+    border: 1px #01417D solid;
+}
+
+@media(max-width: 1265px){
+
+     .hamBurgerMenu1 .bars1{
+    display: flex;
+    height: 3px;
+    width: 30px;
+    margin: 3px;
+    border-radius: 10px;
+    background-color: black;
+    cursor: pointer;
+    z-index: 9999999999999999999999999999999999;
+    }
+    
+    #dark .hamBurgerMenu1 .bars1{
+        background-color: #fff;
+    }
+
+    .hamBurgerMenu1 {
+        display: block;
+        z-index: 99999999999999999999999999999999;
+    }
+    .clinks{
+        right: -250vw;
+        transition: 0.5s ease;
+        position: absolute;
+        z-index: 999999999999999999999;
+    }
+
+        .clinks.active {
+        position: fixed;
+        right: 0;
+        top: 0px;
+        width: 50%;
+        height: 100vh;
+        z-index: 999999999999999999999999999999;
+        transition: all 0.4s ease;
+        font-size: 18px;
+    }
+
+        .hamBurgerMenu1.active{
+        transform: rotate(180deg);
+        position: fixed; 
+        right: 560px;
+        top:70px;
+        z-index: 9999999999999999999999999999999;
+    }
+
+        .hamBurgerMenu1.active #bars1 {
+        transition: transform 0.4s ease-in-out;
+        transform: rotate(45deg) translate(3px, 7px);
+    }
+
+    .hamBurgerMenu1.active #bars2 {
+        transition: transform 0.2s ease-in-out;
+        opacity: 0;
+    }
+
+    .hamBurgerMenu1.active #bars3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+        transform: rotate(-45deg) translate(-2px, 6px);
+    }
+}
+
+@media(max-width: 830px){
+      .hamBurgerMenu1.active{
+        right: 410px;
+    }
+}
+@media(max-width: 800px){
+    .hamBurgerMenu1{
+        display: none;
+    }
+  
+}

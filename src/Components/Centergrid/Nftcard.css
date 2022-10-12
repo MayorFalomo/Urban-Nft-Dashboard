@@ -1,0 +1,127 @@
+.Nftcard img{
+    width: 100%;
+}
+.flexName{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 70px;
+    margin: 20px auto;
+}
+
+.flexName button{
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.liked.active{
+    cursor: pointer;
+     animation:like 0.5s 1;
+     transition: 0.4s ease;
+}
+
+@keyframes liked {
+  0%   { transform: scale(1); }
+  90%   { transform: scale(1.2); }
+  100% { transform: scale(1.1); }
+}
+
+#dark .liked{
+    background-color: #001219;
+}
+
+.nftImage{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.Nftcard{
+        background-color: #C2D8F9;
+        padding: 10px 20px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#dark .Nftcard{
+    background-color:  #001219;
+    color: #fff;
+    border: 5px  #001219 solid;
+}
+
+.bidBtn{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    outline: 0;
+    display: flex;
+    justify-content: center;
+    margin:10px auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #C2D8F9;
+    border: 2px solid #01417D;
+}
+.bidBtn button{
+    color: #01417D;
+}
+
+.bidBtn {
+   border: 2px solid black;
+  background: linear-gradient(to left, #C2D8F9 50%, #01417D 50%);
+  background-size: 200% 100%;
+  background-position: bottom right;
+  transition: all .7s ease-out;
+}
+
+ .bidBtn:hover {
+  border: 2px solid limegreen;
+  background-position: bottom left;
+  color: #fff;
+}
+
+
+
+#dark .bidBtn {
+  background: linear-gradient(to left,  #001219 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: bottom right;
+  transition: all .7s ease-out;
+  color: #000;
+}
+
+#dark .bidBtn:hover {
+  background-position: bottom left;
+  color: #000;
+}
+
+#dark .bidBtn{
+    background-color:  #001219;
+    color: #fff;
+}
+.Nftcard p{
+    display: flex;
+    justify-content: flex-start;
+    margin: auto;
+    width: 90%;
+}
+
+.flexBid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:10px auto;
+    width: 90%;
+}
+
+.sliderflex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    gap: 30px;
+    width: 1000%;
+
+}
+

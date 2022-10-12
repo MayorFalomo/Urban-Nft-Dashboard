@@ -1,0 +1,62 @@
+.followCard{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.topCreatorsContainer{
+     display: flex; 
+    align-items: center; 
+    gap: 30px;
+    margin: auto;
+    width: 100%;
+}
+
+.followBtn button{
+    padding: 7px 25px;
+    border: none;
+    background-color: #01417D;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.followingBtn button{
+    padding: 7px 25px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 4px;
+}
+
+.create{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+}
+
+.create span{
+    color: #01417D;
+}
+
+.followContainer{
+width: 100%;
+}
+
+.creatorsContainer{
+    width: 95%;
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background-color: #fff;
+}
+
+#dark .creatorsContainer{
+    background-color: #001219 ;
+    color: #fff;
+    border: 1px black solid;
+}
+.username{
+    color: #01417D;
+}
